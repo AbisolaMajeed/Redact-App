@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redactr App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="redact-title">Text Redact App</h1>
+    <div>
+        <form action="" id="redactForm">
+            <div>
+                <p><label for="" class="inputFieldText">Original Text</label></p>
+                <p><input type="text" id = "originalText" class="inputField"></p>
+            </div>
+            <div>
+                <p><label for="" class="inputFieldText">Words To Redact</label></p>
+                <p><input type="text" id = "wordsToRedact" class="inputField"></p>
+            </div>
+            <div>
+                <p><label for="" class="inputFieldText">Redact Text</label></p>
+                <p><input type="text" id = "redactText" class="inputField"></p>
+            </div>
+            <div class="redactNowBtn">
+                <button type="button" id="redactBtn" class="redactNow">Redact Now</button>
+            </div>
+
+            <div>
+                <p class="textOutput">Text Ouput</p>
+                <p id = "textOutputField" class="textOuputField"></p>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>  
+</body>
+</html>

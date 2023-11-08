@@ -1,0 +1,53 @@
+body {
+    max-width: 500px;
+    margin: auto;
+    padding-top: 200px;
+    background-color: aliceblue;
+}
+
+.redact-title {
+    text-align: center;
+    padding-bottom: 35px;
+    color: blueviolet;
+}
+
+.inputField {
+    padding: 15px;
+    width: 100%;
+    border: 1px solid blueviolet;
+    border-radius: 6px;
+}
+
+.inputFieldText {
+    color: blueviolet;
+}
+
+.redactNow {
+    padding: 18px; 
+    background-color: rgb(194, 171, 216); 
+    border: 0;
+    border-radius: 6px;
+}
+
+.redactNowBtn {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.redactNow:hover {
+    background-color: rgb(229, 220, 236);
+    cursor: pointer;
+}
+
+.textOutput {
+    font-weight: bold;
+    font-size: larger;
+}
+
+.textOuputField {
+    border: 0;
+    padding: 20px;
+    background-color: white;
+    width: 100%;
+}
