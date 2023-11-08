@@ -1,11 +1,10 @@
 document.getElementById("redactBtn").addEventListener("click", function() {
 
     let text = document.getElementById("originalText").value;
-    let wordsToRedact = document.getElementById("wordsToRedact").value;
+    let wordsToRedact = document.getElementById("wordsToRedact").value.split(' ');
 
-    document.getElementById("textOutputField").innerHTML = customRedact(text, wordsToRedact);
-
-    return customRedact(text, wordsToRedact)
+    let redactedText = customRedact(text, wordsToRedact);
+    document.getElementById("textOutputField").innerHTML = redactedText;
 });
 
 function customRedact(text, wordsToRedact) {
@@ -15,12 +14,10 @@ function customRedact(text, wordsToRedact) {
     for (let i = 0; i < words.length; i++) {
         for (const word of wordsToRedact) {
             if (words[i].toLowerCase() === word.toLowerCase()) {
-                words[i] = '***'; // if there’s a third parameter, you can use it here
+                words[i] = '***';
             }
         }
     }
     
     return words.join(' ');
 }
-
-
